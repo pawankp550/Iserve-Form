@@ -1,6 +1,7 @@
 import React  from 'react'
 import DatePicker from './styled components/datepicker/DatePicker'
 import SelectOption from './styled components/selectDropdown/SelectOption'
+import RadioButtons from './styled components/radioButton/RadioButtons'
 
 import { maritalStatus, EducationalInfo, OccupationType } from './options data/dropdownOptions'
 
@@ -16,7 +17,7 @@ const Personalinfo = () => {
 				<span>
 					<label>Educational Info</label><SelectOption dropdownOptions = {EducationalInfo}/>
 				</span>
-				
+				<span><label>Are you an NRI? </label><RadioButtons radioOptions = {['Yes', 'No']} name = {'nri-option'}/></span>
 				<span>
 					<label>Occupation Type</label><SelectOption dropdownOptions = {OccupationType}/>
 				</span>

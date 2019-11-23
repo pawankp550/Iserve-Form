@@ -56,7 +56,7 @@ const FormComponent = () => {
 		return(
 			<div className ="main-form-container">
 				<div className="form-progress">
-					<span className="form-option" onClick = {() => {switchForm(true)}}>ContactDetails</span><div></div><span className="form-option" onClick = {() => {switchForm(false)}}>Personal Info</span>
+					<span className="form-option" onClick = {() => {switchForm(true)}}>CONTACT</span><div></div><span className="form-option" onClick = {() => {switchForm(false)}}>PERSONAL</span>
 				</div>
 				{getComponent()}
 			</div>  

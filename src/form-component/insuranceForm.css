@@ -115,6 +115,10 @@ p{
 	width: 90px;
 }
 
+/* radioButton style */
+#nri-option{
+    display: flex
+}
 
 
 

@@ -3,23 +3,23 @@ import React, { useState } from 'react';
 
 const SelectOption = ({ dropdownOptions }) => {
 
-    const [selectedOption, setOption] = useState({
-        selectedOption: ''
+    const [selectOption, setOption] = useState({
+        selectedOption: null
     })
 
-    console.log(dropdownOptions)
     const options = dropdownOptions
 
-    const handleChange = selectedOption => {
+    const handleChange = value => {
+
         setOption({
-            optionSelected: selectedOption
+            selectedOption: value
         })
     }
 
 
     return (
         <Select 
-            value={selectedOption.optionSelected}
+            value={selectOption.selectedOption}
             onChange={handleChange}
             options={options}
         />

@@ -1,0 +1,16 @@
+.kVuGjP label span{
+    background-color: transparent;
+    border: solid 1px var(--primary-color);
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 1px 10px;
+    text-align: center;
+  
+    border-radius: 100px;
+}
+
+.kVuGjP label input:checked + span {
+    background-color: #eee;
+    font-weight: 600;
+}
